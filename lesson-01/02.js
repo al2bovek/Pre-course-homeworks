@@ -1,4 +1,6 @@
 // code
 let number1 = Math.floor(Math.random() * 100);
-if(number1 % 2 === 0) console.log(`${number1}:Это четное число`);
-else console.log(`${number1}:Это нечетное число`);
+let res;
+if(number1 % 2 === 0) res = `${number1}:Это четное число`;
+else res = `${number1}:Это нечетное число`;
+console.log(res);
