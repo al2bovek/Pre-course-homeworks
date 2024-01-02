@@ -8,4 +8,4 @@ console.log(temp);
 temp.push(number--);
 console.log(temp);
 temp.push(--number);
-console.log(temp);
+console.log(temp.join(',');
