@@ -1,12 +1,35 @@
- const numbers = [
-    [1, 2, 3, 4, 5],
-    [11, 20, 33, 40, 55],
-    [111, 200, 333, 400, 555],
+const users3 = [
+    {
+        id: 1,
+        user: 'John',
+        surName: 'Doe',
+        address: '123 Main St'
+    },
+    {
+        id: 2,
+        user: 'Tom',
+        surName: 'Johnson',
+        address: '789 Oak St'
+    },
+    {
+        id: 3,
+        user: 'Bob',
+        surName: 'Jones',
+        address: '135 Pine St'
+    },
+    {
+        id: 4,
+        user: 'David',
+        surName: 'Davis',
+        address: '864 Walnut St'
+    },
+    {
+        id: 5,
+        user: 'Mark',
+        surName: 'Taylor',
+        address: '321 Hickory St'
+    },
 ];
-  
-for(let i = 0; i < numbers.length; i++) {
-    for(let j = 0; j < numbers[i].length; j++) {
-        if(numbers[i][j] % 2 !== 0) delete (numbers[i][j]);
-    }
-}
-console.log(numbers);
+
+users3.map(user => user.isMarried = true)
+console.log(users3);
