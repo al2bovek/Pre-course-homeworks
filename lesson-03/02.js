@@ -1,4 +1,4 @@
 const words = ["яблоко", "банан", "апельсин", "манго", "киви"];
-let orange;
-words.indexOf("апельсин") >= 0 ? orange = 'Ура! нашел' : orange = 'Придется поискать в другом магазине…';
-console.log(orange);
+let findResult, find = "апельсин";
+words.indexOf(find) >= 0 ? findResult = 'Ура! нашел' : findResult = 'Придется поискать в другом магазине…';
+console.log(findResult);
