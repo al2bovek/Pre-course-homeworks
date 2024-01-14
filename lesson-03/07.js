@@ -9,4 +9,10 @@ for(let i = 0; i < numbers.length; i++) {
         if(numbers[i][j] % 2 !== 0) delete (numbers[i][j]);
     }
 }
-console.log(numbers);
+const numbersEven = [];
+for(let i = 0; i < numbers.length; i++) {
+    for(let j = 0; j < numbers[i].length; j++) {
+        if(numbers[i][j]) numbersEven.push(numbers[i][j]);
+    }
+}
+console.log(numbersEven);
