@@ -3,22 +3,15 @@
     [11, 20, 33, 40, 55],
     [111, 200, 333, 400, 555],
 ];
- for(let i = 0; i < numbers.length; i++) {
+for(let i = 0; i < numbers.length; i++) {
     for(let j = 0; j < numbers[i].length; j++) {
-        if(numbers[i][j] % 2 !== 0) numbers[i].splice(numbers[j], 1);
+        if(numbers[i][j] % 2 !== 0) delete (numbers[i][j]);
     }
 }
-console.log(numbers);
-
-// for(let i = 0; i < numbers.length; i++) {
-//     for(let j = 0; j < numbers[i].length; j++) {
-//         if(numbers[i][j] % 2 !== 0) delete (numbers[i][j]);
-//     }
-// }
-// const numbersEven = [[], [], []];
-// for(let i = 0; i < numbers.length; i++) {
-//     for(let j = 0; j < numbers[i].length; j++) {
-//         if(numbers[i][j]) numbersEven[i].push(numbers[i][j]);
-//     }
-// }
-// console.log(numbersEven);
+const numbersEven = [[], [], []];
+for(let i = 0; i < numbers.length; i++) {
+    for(let j = 0; j < numbers[i].length; j++) {
+        if(numbers[i][j]) numbersEven[i].push(numbers[i][j]);
+    }
+}
+console.log(numbersEven);
