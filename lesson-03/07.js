@@ -9,16 +9,3 @@ for(let i = 0; i < numbers.length; i++) {
     }
 }
 console.log(numbers);
-
-// for(let i = 0; i < numbers.length; i++) {
-//     for(let j = 0; j < numbers[i].length; j++) {
-//         if(numbers[i][j] % 2 !== 0) delete (numbers[i][j]);
-//     }
-// }
-// const numbersEven = [[], [], []];
-// for(let i = 0; i < numbers.length; i++) {
-//     for(let j = 0; j < numbers[i].length; j++) {
-//         if(numbers[i][j]) numbersEven[i].push(numbers[i][j]);
-//     }
-// }
-// console.log(numbersEven);
